@@ -129,6 +129,15 @@ export default function App() {
         const chars = new antlr4.InputStream(input);
         const lexer = new MedicationsLexer(chars);
         const tokens = new antlr4.CommonTokenStream(lexer);
+        
+        // Log all tokens to debug tokenization
+        tokens.fill();
+        console.log('Tokens:', tokens.tokens.map(t => ({
+          text: t.text,
+          type: MedicationsLexer.symbolicNames[t.type] || 'UNKNOWN',
+          typeId: t.type
+        })));
+
         const parser = new MedicationsParser(tokens);
         parser.buildParseTrees = true;
         const tree = parser.prescription();
@@ -143,7 +152,7 @@ export default function App() {
         function processInstruction(instruction) {
           for (let child of instruction.children || []) {
             if (!child || !child.getText || child.getText().trim() === '') continue;
-            console.log('Context:', child.constructor.name, 'Text:', child.getText());
+            console.log('Context:', child.constructor.name, 'Text:', child.getText(), 'Token Type:', child.getSymbol ? MedicationsLexer.symbolicNames[child.getSymbol().type] : 'N/A');
             if (child.getText().toLowerCase() === 'then') {
               afterThen = true;
               continue;

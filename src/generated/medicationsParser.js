@@ -9,28 +9,28 @@ const serializedATN = [4,1,164,94,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,
 1,1,1,1,1,1,1,1,1,1,1,1,5,1,66,8,1,10,1,12,1,69,9,1,1,2,1,2,1,2,1,3,1,3,
 1,4,1,4,1,5,1,5,1,6,1,6,1,7,1,7,1,8,4,8,85,8,8,11,8,12,8,86,1,9,4,9,90,8,
 9,11,9,12,9,91,1,9,0,0,10,0,2,4,6,8,10,12,14,16,18,0,8,2,0,1,2,5,29,1,0,
-77,103,2,0,46,50,104,107,1,0,36,41,1,0,108,141,3,0,51,71,73,76,142,163,1,
-1,44,44,0,1,104,0,47,1,0,0,0,2,56,1,0,0,0,4,70,1,0,0,0,6,73,1,0,0,0,8,75,
-1,0,0,0,10,77,1,0,0,0,12,79,1,0,0,0,14,81,1,0,0,0,16,84,1,0,0,0,18,89,1,
-0,0,0,20,25,3,2,1,0,21,22,5,42,0,0,22,24,3,2,1,0,23,21,1,0,0,0,24,27,1,0,
-0,0,25,23,1,0,0,0,25,26,1,0,0,0,26,30,1,0,0,0,27,25,1,0,0,0,28,29,5,43,0,
-0,29,31,3,16,8,0,30,28,1,0,0,0,30,31,1,0,0,0,31,34,1,0,0,0,32,33,5,44,0,
-0,33,35,3,18,9,0,34,32,1,0,0,0,34,35,1,0,0,0,35,36,1,0,0,0,36,37,5,0,0,1,
-37,48,1,0,0,0,38,39,3,12,6,0,39,40,5,0,0,1,40,48,1,0,0,0,41,42,3,14,7,0,
-42,43,5,0,0,1,43,48,1,0,0,0,44,45,3,8,4,0,45,46,5,0,0,1,46,48,1,0,0,0,47,
-20,1,0,0,0,47,38,1,0,0,0,47,41,1,0,0,0,47,44,1,0,0,0,48,1,1,0,0,0,49,57,
-3,4,2,0,50,57,3,6,3,0,51,57,3,8,4,0,52,57,3,10,5,0,53,57,3,12,6,0,54,57,
-3,14,7,0,55,57,5,35,0,0,56,49,1,0,0,0,56,50,1,0,0,0,56,51,1,0,0,0,56,52,
-1,0,0,0,56,53,1,0,0,0,56,54,1,0,0,0,56,55,1,0,0,0,57,67,1,0,0,0,58,66,3,
-4,2,0,59,66,3,6,3,0,60,66,3,8,4,0,61,66,3,10,5,0,62,66,3,12,6,0,63,66,3,
-14,7,0,64,66,5,35,0,0,65,58,1,0,0,0,65,59,1,0,0,0,65,60,1,0,0,0,65,61,1,
-0,0,0,65,62,1,0,0,0,65,63,1,0,0,0,65,64,1,0,0,0,66,69,1,0,0,0,67,65,1,0,
-0,0,67,68,1,0,0,0,68,3,1,0,0,0,69,67,1,0,0,0,70,71,5,45,0,0,71,72,7,0,0,
-0,72,5,1,0,0,0,73,74,7,1,0,0,74,7,1,0,0,0,75,76,7,2,0,0,76,9,1,0,0,0,77,
-78,7,3,0,0,78,11,1,0,0,0,79,80,7,4,0,0,80,13,1,0,0,0,81,82,7,5,0,0,82,15,
-1,0,0,0,83,85,8,6,0,0,84,83,1,0,0,0,85,86,1,0,0,0,86,84,1,0,0,0,86,87,1,
-0,0,0,87,17,1,0,0,0,88,90,8,7,0,0,89,88,1,0,0,0,90,91,1,0,0,0,91,89,1,0,
-0,0,91,92,1,0,0,0,92,19,1,0,0,0,9,25,30,34,47,56,65,67,86,91];
+126,152,1,0,117,125,1,0,154,159,1,0,35,68,2,0,69,89,91,116,1,1,162,162,0,
+1,104,0,47,1,0,0,0,2,56,1,0,0,0,4,70,1,0,0,0,6,73,1,0,0,0,8,75,1,0,0,0,10,
+77,1,0,0,0,12,79,1,0,0,0,14,81,1,0,0,0,16,84,1,0,0,0,18,89,1,0,0,0,20,25,
+3,2,1,0,21,22,5,160,0,0,22,24,3,2,1,0,23,21,1,0,0,0,24,27,1,0,0,0,25,23,
+1,0,0,0,25,26,1,0,0,0,26,30,1,0,0,0,27,25,1,0,0,0,28,29,5,161,0,0,29,31,
+3,16,8,0,30,28,1,0,0,0,30,31,1,0,0,0,31,34,1,0,0,0,32,33,5,162,0,0,33,35,
+3,18,9,0,34,32,1,0,0,0,34,35,1,0,0,0,35,36,1,0,0,0,36,37,5,0,0,1,37,48,1,
+0,0,0,38,39,3,12,6,0,39,40,5,0,0,1,40,48,1,0,0,0,41,42,3,14,7,0,42,43,5,
+0,0,1,43,48,1,0,0,0,44,45,3,8,4,0,45,46,5,0,0,1,46,48,1,0,0,0,47,20,1,0,
+0,0,47,38,1,0,0,0,47,41,1,0,0,0,47,44,1,0,0,0,48,1,1,0,0,0,49,57,3,4,2,0,
+50,57,3,6,3,0,51,57,3,8,4,0,52,57,3,10,5,0,53,57,3,12,6,0,54,57,3,14,7,0,
+55,57,5,153,0,0,56,49,1,0,0,0,56,50,1,0,0,0,56,51,1,0,0,0,56,52,1,0,0,0,
+56,53,1,0,0,0,56,54,1,0,0,0,56,55,1,0,0,0,57,67,1,0,0,0,58,66,3,4,2,0,59,
+66,3,6,3,0,60,66,3,8,4,0,61,66,3,10,5,0,62,66,3,12,6,0,63,66,3,14,7,0,64,
+66,5,153,0,0,65,58,1,0,0,0,65,59,1,0,0,0,65,60,1,0,0,0,65,61,1,0,0,0,65,
+62,1,0,0,0,65,63,1,0,0,0,65,64,1,0,0,0,66,69,1,0,0,0,67,65,1,0,0,0,67,68,
+1,0,0,0,68,3,1,0,0,0,69,67,1,0,0,0,70,71,5,163,0,0,71,72,7,0,0,0,72,5,1,
+0,0,0,73,74,7,1,0,0,74,7,1,0,0,0,75,76,7,2,0,0,76,9,1,0,0,0,77,78,7,3,0,
+0,78,11,1,0,0,0,79,80,7,4,0,0,80,13,1,0,0,0,81,82,7,5,0,0,82,15,1,0,0,0,
+83,85,8,6,0,0,84,83,1,0,0,0,85,86,1,0,0,0,86,84,1,0,0,0,86,87,1,0,0,0,87,
+17,1,0,0,0,88,90,8,7,0,0,89,88,1,0,0,0,90,91,1,0,0,0,91,89,1,0,0,0,91,92,
+1,0,0,0,92,19,1,0,0,0,9,25,30,34,47,56,65,67,86,91];
 
 
 const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -46,26 +46,26 @@ export default class medicationsParser extends antlr4.Parser {
                             null, null, null, null, null, null, null, null, 
                             null, null, null, null, null, null, null, null, 
                             null, null, null, null, null, null, null, null, 
+                            null, null, null, null, "'po'", null, "'buccal'", 
                             null, null, null, null, null, null, null, null, 
-                            null, null, "'then'", "'when'", "'#'", null, 
-                            null, null, null, null, null, null, null, null, 
-                            null, null, null, null, null, null, null, null, 
-                            null, null, null, null, null, null, "'abd'", 
-                            null, null, null, null, null, null, null, null, 
-                            null, null, null, null, null, null, null, null, 
-                            null, null, null, null, null, null, null, null, 
-                            null, null, null, null, null, null, null, null, 
-                            "'once'", "'twice'", null, "'ac'", "'pc'", "'hs'", 
-                            "'wc'", null, "'po'", null, "'buccal'", null, 
-                            null, null, null, null, null, null, null, null, 
-                            null, null, null, null, null, null, "'epidural'", 
+                            null, null, null, null, null, null, null, "'epidural'", 
                             "'in'", null, null, null, null, null, null, 
-                            null, null, null, null, null, null, null, "'nostril'", 
-                            "'left nostril'", "'right nostril'", null, "'left arm'", 
-                            "'right arm'", "'l_arm'", "'r_arm'", "'thigh'", 
-                            null, null, "'chest'", "'back'", "'scalp'", 
-                            "'mouth'", "'cheek'", "'joint'", "'spine'", 
-                            "'vagina'", "'rectum'", "'deltoid muscle'" ];
+                            null, null, null, null, null, null, null, null, 
+                            null, null, null, null, null, null, null, null, 
+                            null, null, null, null, null, null, null, null, 
+                            "'abd'", null, null, null, null, null, null, 
+                            null, null, "'nostril'", "'left nostril'", "'right nostril'", 
+                            null, "'left arm'", "'right arm'", "'l_arm'", 
+                            "'r_arm'", "'thigh'", null, null, "'chest'", 
+                            "'back'", "'scalp'", "'mouth'", "'cheek'", "'joint'", 
+                            "'spine'", "'vagina'", "'rectum'", "'deltoid muscle'", 
+                            null, null, null, null, null, null, "'ac'", 
+                            "'pc'", "'hs'", "'wc'", null, null, null, null, 
+                            null, null, null, null, null, null, null, null, 
+                            null, null, null, null, null, "'once'", "'twice'", 
+                            null, null, null, null, null, null, null, null, 
+                            null, null, null, null, null, null, null, "'then'", 
+                            "'when'", "'#'" ];
     static symbolicNames = [ null, "TSP", "TBSP", "G", "L", "KG", "MG", 
                              "MCG", "ML", "U_PER_ML", "MG_PER_G", "MG_PER_ML", 
                              "MCG_PER_ML", "MEQ", "DROP", "TAB", "CAP", 
@@ -73,33 +73,33 @@ export default class medicationsParser extends antlr4.Parser {
                              "SUPPOSITORY", "LOZENGE", "STRIP", "AMPULE", 
                              "INJECTION", "UNIT", "INTERNATIONAL_UNIT", 
                              "PERCENT_CONCENTRATION", "MO", "DAY", "WEEK", 
-                             "YEAR", "M", "WORD", "X_DURATION", "FOR_DURATION", 
-                             "SIMPLE_DURATION", "UNTIL_FINISHED", "CONTINUOUSLY", 
-                             "LIFELONG", "THEN", "WHEN", "HASH", "NUMBER", 
-                             "BEFORE_MEALS", "AFTER_MEALS", "AT_BEDTIME", 
-                             "WITH_MEALS", "ON_EMPTY_STOMACH", "OS", "OD", 
-                             "OU", "AS", "AD", "AU", "UNDER_TONGUE_SITE", 
-                             "BU", "IVP", "IVPB", "PICC", "CVC", "VG", "DG", 
-                             "VL", "B", "UN", "ABD", "UE", "LE", "ANT", 
-                             "POST", "LAT", "MED", "DEL", "SCJ", "QXH", 
-                             "FREQUENCY_PER_DAY", "FREQUENCY_PER_WEEK", 
-                             "FREQUENCY_PER_MONTH", "FREQUENCY_PER_YEAR", 
-                             "FREQUENCY_PER_HOUR", "FREQUENCY_PER_MINUTE", 
-                             "UD", "QD", "BID", "TID", "QID", "QOD", "QAM", 
-                             "QMO", "QPM", "QHS", "QMN", "TIW", "BIW", "QW", 
-                             "QMW", "STAT", "PRN", "ONCE", "TWICE", "THRICE", 
-                             "AC", "PC", "HS", "WC", "ORAL", "PO", "SL", 
-                             "BUCCAL", "RECTAL", "VAGINAL", "TOPICAL", "TRANSDERMAL", 
+                             "YEAR", "M", "ORAL", "PO", "SL", "BUCCAL", 
+                             "RECTAL", "VAGINAL", "TOPICAL", "TRANSDERMAL", 
                              "OPHTHALMIC", "OTIC", "NASAL", "INHALATION", 
                              "IV", "IM", "SC", "ID", "IA", "IT", "IP", "INTRATHECAL_FULL", 
                              "IN", "NEB", "QS", "DISP", "NR", "NPO", "OTC", 
                              "QMON", "QTUE", "QWED", "QTHURS", "QFRI", "QSAT", 
-                             "QSUN", "NOSTRIL", "LEFT_NOSTRIL", "RIGHT_NOSTRIL", 
+                             "QSUN", "OS", "OD", "OU", "AS", "AD", "AU", 
+                             "UNDER_TONGUE_SITE", "BU", "IVP", "IVPB", "PICC", 
+                             "CVC", "VG", "DG", "VL", "B", "UN", "ABD", 
+                             "UE", "LE", "ANT", "POST", "LAT", "MED", "DEL", 
+                             "SCJ", "NOSTRIL", "LEFT_NOSTRIL", "RIGHT_NOSTRIL", 
                              "NARES", "LEFT_ARM", "RIGHT_ARM", "L_ARM", 
                              "R_ARM", "THIGH", "GLUTEAL", "ABDOMEN", "CHEST", 
                              "BACK", "SCALP", "MOUTH", "CHEEK", "JOINT", 
                              "SPINE_AREA", "VAGINA", "RECTUM", "DELTOID", 
-                             "VASTUS_LATERALIS", "WS" ];
+                             "VASTUS_LATERALIS", "BEFORE_MEALS", "AFTER_MEALS", 
+                             "AT_BEDTIME", "WITH_MEALS", "ON_EMPTY_STOMACH", 
+                             "AC", "PC", "HS", "WC", "UD", "QD", "BID", 
+                             "TID", "QID", "QOD", "QAM", "QMO", "QPM", "QHS", 
+                             "QMN", "TIW", "BIW", "QW", "QMW", "STAT", "PRN", 
+                             "ONCE", "TWICE", "THRICE", "QXH", "FREQUENCY_PER_DAY", 
+                             "FREQUENCY_PER_WEEK", "FREQUENCY_PER_MONTH", 
+                             "FREQUENCY_PER_YEAR", "FREQUENCY_PER_HOUR", 
+                             "FREQUENCY_PER_MINUTE", "WORD", "X_DURATION", 
+                             "FOR_DURATION", "SIMPLE_DURATION", "UNTIL_FINISHED", 
+                             "CONTINUOUSLY", "LIFELONG", "THEN", "WHEN", 
+                             "HASH", "NUMBER", "WS" ];
     static ruleNames = [ "prescription", "instruction", "dosage", "frequency", 
                          "timing", "duration", "route", "site", "conditionText", 
                          "noteText" ];
@@ -130,7 +130,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 25;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	            while(_la===42) {
+	            while(_la===160) {
 	                this.state = 21;
 	                this.match(medicationsParser.THEN);
 	                this.state = 22;
@@ -142,7 +142,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 30;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	            if(_la===43) {
+	            if(_la===161) {
 	                this.state = 28;
 	                this.match(medicationsParser.WHEN);
 	                this.state = 29;
@@ -152,7 +152,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 34;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	            if(_la===44) {
+	            if(_la===162) {
 	                this.state = 32;
 	                this.match(medicationsParser.HASH);
 	                this.state = 33;
@@ -213,79 +213,10 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.state = 56;
 	        this._errHandler.sync(this);
 	        switch(this._input.LA(1)) {
-	        case 45:
+	        case 163:
 	            this.state = 49;
 	            this.dosage();
 	            break;
-	        case 77:
-	        case 78:
-	        case 79:
-	        case 80:
-	        case 81:
-	        case 82:
-	        case 83:
-	        case 84:
-	        case 85:
-	        case 86:
-	        case 87:
-	        case 88:
-	        case 89:
-	        case 90:
-	        case 91:
-	        case 92:
-	        case 93:
-	        case 94:
-	        case 95:
-	        case 96:
-	        case 97:
-	        case 98:
-	        case 99:
-	        case 100:
-	        case 101:
-	        case 102:
-	        case 103:
-	            this.state = 50;
-	            this.frequency();
-	            break;
-	        case 46:
-	        case 47:
-	        case 48:
-	        case 49:
-	        case 50:
-	        case 104:
-	        case 105:
-	        case 106:
-	        case 107:
-	            this.state = 51;
-	            this.timing();
-	            break;
-	        case 36:
-	        case 37:
-	        case 38:
-	        case 39:
-	        case 40:
-	        case 41:
-	            this.state = 52;
-	            this.duration();
-	            break;
-	        case 108:
-	        case 109:
-	        case 110:
-	        case 111:
-	        case 112:
-	        case 113:
-	        case 114:
-	        case 115:
-	        case 116:
-	        case 117:
-	        case 118:
-	        case 119:
-	        case 120:
-	        case 121:
-	        case 122:
-	        case 123:
-	        case 124:
-	        case 125:
 	        case 126:
 	        case 127:
 	        case 128:
@@ -302,9 +233,57 @@ export default class medicationsParser extends antlr4.Parser {
 	        case 139:
 	        case 140:
 	        case 141:
-	            this.state = 53;
-	            this.route();
+	        case 142:
+	        case 143:
+	        case 144:
+	        case 145:
+	        case 146:
+	        case 147:
+	        case 148:
+	        case 149:
+	        case 150:
+	        case 151:
+	        case 152:
+	            this.state = 50;
+	            this.frequency();
 	            break;
+	        case 117:
+	        case 118:
+	        case 119:
+	        case 120:
+	        case 121:
+	        case 122:
+	        case 123:
+	        case 124:
+	        case 125:
+	            this.state = 51;
+	            this.timing();
+	            break;
+	        case 154:
+	        case 155:
+	        case 156:
+	        case 157:
+	        case 158:
+	        case 159:
+	            this.state = 52;
+	            this.duration();
+	            break;
+	        case 35:
+	        case 36:
+	        case 37:
+	        case 38:
+	        case 39:
+	        case 40:
+	        case 41:
+	        case 42:
+	        case 43:
+	        case 44:
+	        case 45:
+	        case 46:
+	        case 47:
+	        case 48:
+	        case 49:
+	        case 50:
 	        case 51:
 	        case 52:
 	        case 53:
@@ -323,39 +302,60 @@ export default class medicationsParser extends antlr4.Parser {
 	        case 66:
 	        case 67:
 	        case 68:
+	            this.state = 53;
+	            this.route();
+	            break;
 	        case 69:
 	        case 70:
 	        case 71:
+	        case 72:
 	        case 73:
 	        case 74:
 	        case 75:
 	        case 76:
-	        case 142:
-	        case 143:
-	        case 144:
-	        case 145:
-	        case 146:
-	        case 147:
-	        case 148:
-	        case 149:
-	        case 150:
-	        case 151:
-	        case 152:
-	        case 153:
-	        case 154:
-	        case 155:
-	        case 156:
-	        case 157:
-	        case 158:
-	        case 159:
-	        case 160:
-	        case 161:
-	        case 162:
-	        case 163:
+	        case 77:
+	        case 78:
+	        case 79:
+	        case 80:
+	        case 81:
+	        case 82:
+	        case 83:
+	        case 84:
+	        case 85:
+	        case 86:
+	        case 87:
+	        case 88:
+	        case 89:
+	        case 91:
+	        case 92:
+	        case 93:
+	        case 94:
+	        case 95:
+	        case 96:
+	        case 97:
+	        case 98:
+	        case 99:
+	        case 100:
+	        case 101:
+	        case 102:
+	        case 103:
+	        case 104:
+	        case 105:
+	        case 106:
+	        case 107:
+	        case 108:
+	        case 109:
+	        case 110:
+	        case 111:
+	        case 112:
+	        case 113:
+	        case 114:
+	        case 115:
+	        case 116:
 	            this.state = 54;
 	            this.site();
 	            break;
-	        case 35:
+	        case 153:
 	            this.state = 55;
 	            this.match(medicationsParser.WORD);
 	            break;
@@ -365,83 +365,14 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.state = 67;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        while(((((_la - 35)) & ~0x1f) === 0 && ((1 << (_la - 35)) & 4294966399) !== 0) || ((((_la - 67)) & ~0x1f) === 0 && ((1 << (_la - 67)) & 4294967263) !== 0) || ((((_la - 99)) & ~0x1f) === 0 && ((1 << (_la - 99)) & 4294967295) !== 0) || ((((_la - 131)) & ~0x1f) === 0 && ((1 << (_la - 131)) & 4294967295) !== 0) || _la===163) {
+	        while(((((_la - 35)) & ~0x1f) === 0 && ((1 << (_la - 35)) & 4294967295) !== 0) || ((((_la - 67)) & ~0x1f) === 0 && ((1 << (_la - 67)) & 4286578687) !== 0) || ((((_la - 99)) & ~0x1f) === 0 && ((1 << (_la - 99)) & 4294967295) !== 0) || ((((_la - 131)) & ~0x1f) === 0 && ((1 << (_la - 131)) & 536870911) !== 0) || _la===163) {
 	            this.state = 65;
 	            this._errHandler.sync(this);
 	            switch(this._input.LA(1)) {
-	            case 45:
+	            case 163:
 	                this.state = 58;
 	                this.dosage();
 	                break;
-	            case 77:
-	            case 78:
-	            case 79:
-	            case 80:
-	            case 81:
-	            case 82:
-	            case 83:
-	            case 84:
-	            case 85:
-	            case 86:
-	            case 87:
-	            case 88:
-	            case 89:
-	            case 90:
-	            case 91:
-	            case 92:
-	            case 93:
-	            case 94:
-	            case 95:
-	            case 96:
-	            case 97:
-	            case 98:
-	            case 99:
-	            case 100:
-	            case 101:
-	            case 102:
-	            case 103:
-	                this.state = 59;
-	                this.frequency();
-	                break;
-	            case 46:
-	            case 47:
-	            case 48:
-	            case 49:
-	            case 50:
-	            case 104:
-	            case 105:
-	            case 106:
-	            case 107:
-	                this.state = 60;
-	                this.timing();
-	                break;
-	            case 36:
-	            case 37:
-	            case 38:
-	            case 39:
-	            case 40:
-	            case 41:
-	                this.state = 61;
-	                this.duration();
-	                break;
-	            case 108:
-	            case 109:
-	            case 110:
-	            case 111:
-	            case 112:
-	            case 113:
-	            case 114:
-	            case 115:
-	            case 116:
-	            case 117:
-	            case 118:
-	            case 119:
-	            case 120:
-	            case 121:
-	            case 122:
-	            case 123:
-	            case 124:
-	            case 125:
 	            case 126:
 	            case 127:
 	            case 128:
@@ -458,9 +389,57 @@ export default class medicationsParser extends antlr4.Parser {
 	            case 139:
 	            case 140:
 	            case 141:
-	                this.state = 62;
-	                this.route();
+	            case 142:
+	            case 143:
+	            case 144:
+	            case 145:
+	            case 146:
+	            case 147:
+	            case 148:
+	            case 149:
+	            case 150:
+	            case 151:
+	            case 152:
+	                this.state = 59;
+	                this.frequency();
 	                break;
+	            case 117:
+	            case 118:
+	            case 119:
+	            case 120:
+	            case 121:
+	            case 122:
+	            case 123:
+	            case 124:
+	            case 125:
+	                this.state = 60;
+	                this.timing();
+	                break;
+	            case 154:
+	            case 155:
+	            case 156:
+	            case 157:
+	            case 158:
+	            case 159:
+	                this.state = 61;
+	                this.duration();
+	                break;
+	            case 35:
+	            case 36:
+	            case 37:
+	            case 38:
+	            case 39:
+	            case 40:
+	            case 41:
+	            case 42:
+	            case 43:
+	            case 44:
+	            case 45:
+	            case 46:
+	            case 47:
+	            case 48:
+	            case 49:
+	            case 50:
 	            case 51:
 	            case 52:
 	            case 53:
@@ -479,39 +458,60 @@ export default class medicationsParser extends antlr4.Parser {
 	            case 66:
 	            case 67:
 	            case 68:
+	                this.state = 62;
+	                this.route();
+	                break;
 	            case 69:
 	            case 70:
 	            case 71:
+	            case 72:
 	            case 73:
 	            case 74:
 	            case 75:
 	            case 76:
-	            case 142:
-	            case 143:
-	            case 144:
-	            case 145:
-	            case 146:
-	            case 147:
-	            case 148:
-	            case 149:
-	            case 150:
-	            case 151:
-	            case 152:
-	            case 153:
-	            case 154:
-	            case 155:
-	            case 156:
-	            case 157:
-	            case 158:
-	            case 159:
-	            case 160:
-	            case 161:
-	            case 162:
-	            case 163:
+	            case 77:
+	            case 78:
+	            case 79:
+	            case 80:
+	            case 81:
+	            case 82:
+	            case 83:
+	            case 84:
+	            case 85:
+	            case 86:
+	            case 87:
+	            case 88:
+	            case 89:
+	            case 91:
+	            case 92:
+	            case 93:
+	            case 94:
+	            case 95:
+	            case 96:
+	            case 97:
+	            case 98:
+	            case 99:
+	            case 100:
+	            case 101:
+	            case 102:
+	            case 103:
+	            case 104:
+	            case 105:
+	            case 106:
+	            case 107:
+	            case 108:
+	            case 109:
+	            case 110:
+	            case 111:
+	            case 112:
+	            case 113:
+	            case 114:
+	            case 115:
+	            case 116:
 	                this.state = 63;
 	                this.site();
 	                break;
-	            case 35:
+	            case 153:
 	                this.state = 64;
 	                this.match(medicationsParser.WORD);
 	                break;
@@ -579,7 +579,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 73;
 	        _la = this._input.LA(1);
-	        if(!(((((_la - 77)) & ~0x1f) === 0 && ((1 << (_la - 77)) & 134217727) !== 0))) {
+	        if(!(((((_la - 126)) & ~0x1f) === 0 && ((1 << (_la - 126)) & 134217727) !== 0))) {
 	        this._errHandler.recoverInline(this);
 	        }
 	        else {
@@ -610,7 +610,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 75;
 	        _la = this._input.LA(1);
-	        if(!(((((_la - 46)) & ~0x1f) === 0 && ((1 << (_la - 46)) & 31) !== 0) || ((((_la - 104)) & ~0x1f) === 0 && ((1 << (_la - 104)) & 15) !== 0))) {
+	        if(!(((((_la - 117)) & ~0x1f) === 0 && ((1 << (_la - 117)) & 511) !== 0))) {
 	        this._errHandler.recoverInline(this);
 	        }
 	        else {
@@ -641,7 +641,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 77;
 	        _la = this._input.LA(1);
-	        if(!(((((_la - 36)) & ~0x1f) === 0 && ((1 << (_la - 36)) & 63) !== 0))) {
+	        if(!(((((_la - 154)) & ~0x1f) === 0 && ((1 << (_la - 154)) & 63) !== 0))) {
 	        this._errHandler.recoverInline(this);
 	        }
 	        else {
@@ -672,7 +672,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 79;
 	        _la = this._input.LA(1);
-	        if(!(((((_la - 108)) & ~0x1f) === 0 && ((1 << (_la - 108)) & 4294967295) !== 0) || _la===140 || _la===141)) {
+	        if(!(((((_la - 35)) & ~0x1f) === 0 && ((1 << (_la - 35)) & 4294967295) !== 0) || _la===67 || _la===68)) {
 	        this._errHandler.recoverInline(this);
 	        }
 	        else {
@@ -703,7 +703,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 81;
 	        _la = this._input.LA(1);
-	        if(!(((((_la - 51)) & ~0x1f) === 0 && ((1 << (_la - 51)) & 65011711) !== 0) || ((((_la - 142)) & ~0x1f) === 0 && ((1 << (_la - 142)) & 4194303) !== 0))) {
+	        if(!(((((_la - 69)) & ~0x1f) === 0 && ((1 << (_la - 69)) & 4292870143) !== 0) || ((((_la - 101)) & ~0x1f) === 0 && ((1 << (_la - 101)) & 65535) !== 0))) {
 	        this._errHandler.recoverInline(this);
 	        }
 	        else {
@@ -738,7 +738,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        do {
 	            this.state = 83;
 	            _la = this._input.LA(1);
-	            if(_la<=0 || _la===-1 || _la===44) {
+	            if(_la<=0 || _la===-1 || _la===162) {
 	            this._errHandler.recoverInline(this);
 	            }
 	            else {
@@ -748,7 +748,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 86; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	        } while((((_la) & ~0x1f) === 0 && ((1 << _la) & 4294967294) !== 0) || ((((_la - 32)) & ~0x1f) === 0 && ((1 << (_la - 32)) & 4294963199) !== 0) || ((((_la - 64)) & ~0x1f) === 0 && ((1 << (_la - 64)) & 4294967295) !== 0) || ((((_la - 96)) & ~0x1f) === 0 && ((1 << (_la - 96)) & 4294967295) !== 0) || ((((_la - 128)) & ~0x1f) === 0 && ((1 << (_la - 128)) & 4294967295) !== 0) || ((((_la - 160)) & ~0x1f) === 0 && ((1 << (_la - 160)) & 31) !== 0));
+	        } while((((_la) & ~0x1f) === 0 && ((1 << _la) & 4294967294) !== 0) || ((((_la - 32)) & ~0x1f) === 0 && ((1 << (_la - 32)) & 4294967295) !== 0) || ((((_la - 64)) & ~0x1f) === 0 && ((1 << (_la - 64)) & 4294967295) !== 0) || ((((_la - 96)) & ~0x1f) === 0 && ((1 << (_la - 96)) & 4294967295) !== 0) || ((((_la - 128)) & ~0x1f) === 0 && ((1 << (_la - 128)) & 4294967295) !== 0) || ((((_la - 160)) & ~0x1f) === 0 && ((1 << (_la - 160)) & 27) !== 0));
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -840,135 +840,135 @@ medicationsParser.DAY = 31;
 medicationsParser.WEEK = 32;
 medicationsParser.YEAR = 33;
 medicationsParser.M = 34;
-medicationsParser.WORD = 35;
-medicationsParser.X_DURATION = 36;
-medicationsParser.FOR_DURATION = 37;
-medicationsParser.SIMPLE_DURATION = 38;
-medicationsParser.UNTIL_FINISHED = 39;
-medicationsParser.CONTINUOUSLY = 40;
-medicationsParser.LIFELONG = 41;
-medicationsParser.THEN = 42;
-medicationsParser.WHEN = 43;
-medicationsParser.HASH = 44;
-medicationsParser.NUMBER = 45;
-medicationsParser.BEFORE_MEALS = 46;
-medicationsParser.AFTER_MEALS = 47;
-medicationsParser.AT_BEDTIME = 48;
-medicationsParser.WITH_MEALS = 49;
-medicationsParser.ON_EMPTY_STOMACH = 50;
-medicationsParser.OS = 51;
-medicationsParser.OD = 52;
-medicationsParser.OU = 53;
-medicationsParser.AS = 54;
-medicationsParser.AD = 55;
-medicationsParser.AU = 56;
-medicationsParser.UNDER_TONGUE_SITE = 57;
-medicationsParser.BU = 58;
-medicationsParser.IVP = 59;
-medicationsParser.IVPB = 60;
-medicationsParser.PICC = 61;
-medicationsParser.CVC = 62;
-medicationsParser.VG = 63;
-medicationsParser.DG = 64;
-medicationsParser.VL = 65;
-medicationsParser.B = 66;
-medicationsParser.UN = 67;
-medicationsParser.ABD = 68;
-medicationsParser.UE = 69;
-medicationsParser.LE = 70;
-medicationsParser.ANT = 71;
-medicationsParser.POST = 72;
-medicationsParser.LAT = 73;
-medicationsParser.MED = 74;
-medicationsParser.DEL = 75;
-medicationsParser.SCJ = 76;
-medicationsParser.QXH = 77;
-medicationsParser.FREQUENCY_PER_DAY = 78;
-medicationsParser.FREQUENCY_PER_WEEK = 79;
-medicationsParser.FREQUENCY_PER_MONTH = 80;
-medicationsParser.FREQUENCY_PER_YEAR = 81;
-medicationsParser.FREQUENCY_PER_HOUR = 82;
-medicationsParser.FREQUENCY_PER_MINUTE = 83;
-medicationsParser.UD = 84;
-medicationsParser.QD = 85;
-medicationsParser.BID = 86;
-medicationsParser.TID = 87;
-medicationsParser.QID = 88;
-medicationsParser.QOD = 89;
-medicationsParser.QAM = 90;
-medicationsParser.QMO = 91;
-medicationsParser.QPM = 92;
-medicationsParser.QHS = 93;
-medicationsParser.QMN = 94;
-medicationsParser.TIW = 95;
-medicationsParser.BIW = 96;
-medicationsParser.QW = 97;
-medicationsParser.QMW = 98;
-medicationsParser.STAT = 99;
-medicationsParser.PRN = 100;
-medicationsParser.ONCE = 101;
-medicationsParser.TWICE = 102;
-medicationsParser.THRICE = 103;
-medicationsParser.AC = 104;
-medicationsParser.PC = 105;
-medicationsParser.HS = 106;
-medicationsParser.WC = 107;
-medicationsParser.ORAL = 108;
-medicationsParser.PO = 109;
-medicationsParser.SL = 110;
-medicationsParser.BUCCAL = 111;
-medicationsParser.RECTAL = 112;
-medicationsParser.VAGINAL = 113;
-medicationsParser.TOPICAL = 114;
-medicationsParser.TRANSDERMAL = 115;
-medicationsParser.OPHTHALMIC = 116;
-medicationsParser.OTIC = 117;
-medicationsParser.NASAL = 118;
-medicationsParser.INHALATION = 119;
-medicationsParser.IV = 120;
-medicationsParser.IM = 121;
-medicationsParser.SC = 122;
-medicationsParser.ID = 123;
-medicationsParser.IA = 124;
-medicationsParser.IT = 125;
-medicationsParser.IP = 126;
-medicationsParser.INTRATHECAL_FULL = 127;
-medicationsParser.IN = 128;
-medicationsParser.NEB = 129;
-medicationsParser.QS = 130;
-medicationsParser.DISP = 131;
-medicationsParser.NR = 132;
-medicationsParser.NPO = 133;
-medicationsParser.OTC = 134;
-medicationsParser.QMON = 135;
-medicationsParser.QTUE = 136;
-medicationsParser.QWED = 137;
-medicationsParser.QTHURS = 138;
-medicationsParser.QFRI = 139;
-medicationsParser.QSAT = 140;
-medicationsParser.QSUN = 141;
-medicationsParser.NOSTRIL = 142;
-medicationsParser.LEFT_NOSTRIL = 143;
-medicationsParser.RIGHT_NOSTRIL = 144;
-medicationsParser.NARES = 145;
-medicationsParser.LEFT_ARM = 146;
-medicationsParser.RIGHT_ARM = 147;
-medicationsParser.L_ARM = 148;
-medicationsParser.R_ARM = 149;
-medicationsParser.THIGH = 150;
-medicationsParser.GLUTEAL = 151;
-medicationsParser.ABDOMEN = 152;
-medicationsParser.CHEST = 153;
-medicationsParser.BACK = 154;
-medicationsParser.SCALP = 155;
-medicationsParser.MOUTH = 156;
-medicationsParser.CHEEK = 157;
-medicationsParser.JOINT = 158;
-medicationsParser.SPINE_AREA = 159;
-medicationsParser.VAGINA = 160;
-medicationsParser.RECTUM = 161;
-medicationsParser.DELTOID = 162;
-medicationsParser.VASTUS_LATERALIS = 163;
+medicationsParser.ORAL = 35;
+medicationsParser.PO = 36;
+medicationsParser.SL = 37;
+medicationsParser.BUCCAL = 38;
+medicationsParser.RECTAL = 39;
+medicationsParser.VAGINAL = 40;
+medicationsParser.TOPICAL = 41;
+medicationsParser.TRANSDERMAL = 42;
+medicationsParser.OPHTHALMIC = 43;
+medicationsParser.OTIC = 44;
+medicationsParser.NASAL = 45;
+medicationsParser.INHALATION = 46;
+medicationsParser.IV = 47;
+medicationsParser.IM = 48;
+medicationsParser.SC = 49;
+medicationsParser.ID = 50;
+medicationsParser.IA = 51;
+medicationsParser.IT = 52;
+medicationsParser.IP = 53;
+medicationsParser.INTRATHECAL_FULL = 54;
+medicationsParser.IN = 55;
+medicationsParser.NEB = 56;
+medicationsParser.QS = 57;
+medicationsParser.DISP = 58;
+medicationsParser.NR = 59;
+medicationsParser.NPO = 60;
+medicationsParser.OTC = 61;
+medicationsParser.QMON = 62;
+medicationsParser.QTUE = 63;
+medicationsParser.QWED = 64;
+medicationsParser.QTHURS = 65;
+medicationsParser.QFRI = 66;
+medicationsParser.QSAT = 67;
+medicationsParser.QSUN = 68;
+medicationsParser.OS = 69;
+medicationsParser.OD = 70;
+medicationsParser.OU = 71;
+medicationsParser.AS = 72;
+medicationsParser.AD = 73;
+medicationsParser.AU = 74;
+medicationsParser.UNDER_TONGUE_SITE = 75;
+medicationsParser.BU = 76;
+medicationsParser.IVP = 77;
+medicationsParser.IVPB = 78;
+medicationsParser.PICC = 79;
+medicationsParser.CVC = 80;
+medicationsParser.VG = 81;
+medicationsParser.DG = 82;
+medicationsParser.VL = 83;
+medicationsParser.B = 84;
+medicationsParser.UN = 85;
+medicationsParser.ABD = 86;
+medicationsParser.UE = 87;
+medicationsParser.LE = 88;
+medicationsParser.ANT = 89;
+medicationsParser.POST = 90;
+medicationsParser.LAT = 91;
+medicationsParser.MED = 92;
+medicationsParser.DEL = 93;
+medicationsParser.SCJ = 94;
+medicationsParser.NOSTRIL = 95;
+medicationsParser.LEFT_NOSTRIL = 96;
+medicationsParser.RIGHT_NOSTRIL = 97;
+medicationsParser.NARES = 98;
+medicationsParser.LEFT_ARM = 99;
+medicationsParser.RIGHT_ARM = 100;
+medicationsParser.L_ARM = 101;
+medicationsParser.R_ARM = 102;
+medicationsParser.THIGH = 103;
+medicationsParser.GLUTEAL = 104;
+medicationsParser.ABDOMEN = 105;
+medicationsParser.CHEST = 106;
+medicationsParser.BACK = 107;
+medicationsParser.SCALP = 108;
+medicationsParser.MOUTH = 109;
+medicationsParser.CHEEK = 110;
+medicationsParser.JOINT = 111;
+medicationsParser.SPINE_AREA = 112;
+medicationsParser.VAGINA = 113;
+medicationsParser.RECTUM = 114;
+medicationsParser.DELTOID = 115;
+medicationsParser.VASTUS_LATERALIS = 116;
+medicationsParser.BEFORE_MEALS = 117;
+medicationsParser.AFTER_MEALS = 118;
+medicationsParser.AT_BEDTIME = 119;
+medicationsParser.WITH_MEALS = 120;
+medicationsParser.ON_EMPTY_STOMACH = 121;
+medicationsParser.AC = 122;
+medicationsParser.PC = 123;
+medicationsParser.HS = 124;
+medicationsParser.WC = 125;
+medicationsParser.UD = 126;
+medicationsParser.QD = 127;
+medicationsParser.BID = 128;
+medicationsParser.TID = 129;
+medicationsParser.QID = 130;
+medicationsParser.QOD = 131;
+medicationsParser.QAM = 132;
+medicationsParser.QMO = 133;
+medicationsParser.QPM = 134;
+medicationsParser.QHS = 135;
+medicationsParser.QMN = 136;
+medicationsParser.TIW = 137;
+medicationsParser.BIW = 138;
+medicationsParser.QW = 139;
+medicationsParser.QMW = 140;
+medicationsParser.STAT = 141;
+medicationsParser.PRN = 142;
+medicationsParser.ONCE = 143;
+medicationsParser.TWICE = 144;
+medicationsParser.THRICE = 145;
+medicationsParser.QXH = 146;
+medicationsParser.FREQUENCY_PER_DAY = 147;
+medicationsParser.FREQUENCY_PER_WEEK = 148;
+medicationsParser.FREQUENCY_PER_MONTH = 149;
+medicationsParser.FREQUENCY_PER_YEAR = 150;
+medicationsParser.FREQUENCY_PER_HOUR = 151;
+medicationsParser.FREQUENCY_PER_MINUTE = 152;
+medicationsParser.WORD = 153;
+medicationsParser.X_DURATION = 154;
+medicationsParser.FOR_DURATION = 155;
+medicationsParser.SIMPLE_DURATION = 156;
+medicationsParser.UNTIL_FINISHED = 157;
+medicationsParser.CONTINUOUSLY = 158;
+medicationsParser.LIFELONG = 159;
+medicationsParser.THEN = 160;
+medicationsParser.WHEN = 161;
+medicationsParser.HASH = 162;
+medicationsParser.NUMBER = 163;
 medicationsParser.WS = 164;
 
 medicationsParser.RULE_prescription = 0;
