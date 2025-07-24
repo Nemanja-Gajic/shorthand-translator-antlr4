@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import antlr4 from 'antlr4';
-import MedicationsLexer from './generated/MedicationsLexer';
-import MedicationsParser from './generated/MedicationsParser';
+import MedicationsLexer from './generated/medicationsLexer';
+import MedicationsParser from './generated/medicationsParser';
 
 function translateTiming(token) {
   const text = token.getText().toLowerCase();
