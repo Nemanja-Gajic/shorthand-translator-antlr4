@@ -1278,7 +1278,7 @@ export default class medicationsLexer extends antlr4.Lexer {
                           "FREQUENCY_PER_DAY", "FREQUENCY_PER_WEEK", "FREQUENCY_PER_MONTH", 
                           "FREQUENCY_PER_YEAR", "FREQUENCY_PER_HOUR", "FREQUENCY_PER_MINUTE", 
                           "QXD", "QXW", "QXM", "QXMIN", "FRACTIONAL_DAY_DURATION", 
-                          "FRACTIONAL_WEEK_DURATION", "FRACTIONAL_YEAR_DURATION", 
+                          "FRACTIONAL_WEEK_DURATION", "FRACTIONAL_MONTH_DURATION", 
                           "WORD", "X_DURATION", "FOR_DURATION", "SIMPLE_DURATION", 
                           "UNTIL_FINISHED", "CONTINUOUSLY", "LIFELONG", 
                           "THEN", "WHEN", "HASH", "NUMBER", "WS" ];
@@ -1310,7 +1310,7 @@ export default class medicationsLexer extends antlr4.Lexer {
                       "FREQUENCY_PER_MONTH", "FREQUENCY_PER_YEAR", "FREQUENCY_PER_HOUR", 
                       "FREQUENCY_PER_MINUTE", "QXD", "QXW", "QXM", "QXMIN", 
                       "FRACTIONAL_DAY_DURATION", "FRACTIONAL_WEEK_DURATION", 
-                      "FRACTIONAL_YEAR_DURATION", "WORD", "X_DURATION", 
+                      "FRACTIONAL_MONTH_DURATION", "WORD", "X_DURATION", 
                       "FOR_DURATION", "SIMPLE_DURATION", "UNTIL_FINISHED", 
                       "CONTINUOUSLY", "LIFELONG", "THEN", "WHEN", "HASH", 
                       "NUMBER", "WS" ];
@@ -1480,7 +1480,7 @@ medicationsLexer.QXM = 155;
 medicationsLexer.QXMIN = 156;
 medicationsLexer.FRACTIONAL_DAY_DURATION = 157;
 medicationsLexer.FRACTIONAL_WEEK_DURATION = 158;
-medicationsLexer.FRACTIONAL_YEAR_DURATION = 159;
+medicationsLexer.FRACTIONAL_MONTH_DURATION = 159;
 medicationsLexer.WORD = 160;
 medicationsLexer.X_DURATION = 161;
 medicationsLexer.FOR_DURATION = 162;

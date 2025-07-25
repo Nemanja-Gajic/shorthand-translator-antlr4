@@ -25,7 +25,7 @@ function translateDuration(token) {
   const matchYears = text.match(/(?:x\s*|for\s*)?(\d+)\s*(y|year|years)/i);
   const matchFractionalDays = text.match(/(\d+)\/7/i);
   const matchFractionalWeeks = text.match(/(\d+)\/52/i);
-  const matchFractionalYears = text.match(/(\d+)\/12/i);
+  const matchFractionalMonths = text.match(/(\d+)\/12/i);
   if (matchDays) {
     const days = parseInt(matchDays[1], 10);
     return `for ${days} day${days > 1 ? 's' : ''}`;
@@ -44,9 +44,9 @@ function translateDuration(token) {
   } else if (matchFractionalWeeks) {
     const weeks = parseInt(matchFractionalWeeks[1], 10);
     return `for ${weeks} week${weeks > 1 ? 's' : ''}`;
-  } else if (matchFractionalYears) {
-    const years = parseInt(matchFractionalYears[1], 10);
-    return `for ${years} year${years > 1 ? 's' : ''}`;
+  } else if (matchFractionalMonths) {
+    const months = parseInt(matchFractionalMonths[1], 10);
+    return `for ${months} month${months > 1 ? 's' : ''}`;
   } else if (text === 'until finished' || text === 'until complete' || text === 'complete course') {
     return 'Take full prescribed course';
   }
@@ -253,7 +253,7 @@ export default function App() {
               const matchYears = text.match(/(?:x\s*|for\s*)?(\d+)\s*(y|year|years)/i);
               const matchFractionalDays = text.match(/(\d+)\/7/i);
               const matchFractionalWeeks = text.match(/(\d+)\/52/i);
-              const matchFractionalYears = text.match(/(\d+)\/12/i);
+              const matchFractionalMonths = text.match(/(\d+)\/12/i);
               if (matchDays) {
                 const days = parseInt(matchDays[1], 10);
                 durationDays = days;
@@ -296,10 +296,10 @@ export default function App() {
                 const part = translateDuration({ getText: () => text });
                 if (afterThen) parts2.push(part);
                 else parts1.push(part);
-              } else if (matchFractionalYears) {
-                const years = parseInt(matchFractionalYears[1], 10);
-                durationDays = years * 365;
-                structuredList.push({ duration: years, unit: years > 1 ? 'years' : 'year' });
+              } else if (matchFractionalMonths) {
+                const months = parseInt(matchFractionalMonths[1], 10);
+                durationDays = months * 30;
+                structuredList.push({ duration: months, unit: months > 1 ? 'months' : 'month' });
                 const part = translateDuration({ getText: () => text });
                 if (afterThen) parts2.push(part);
                 else parts1.push(part);
@@ -402,7 +402,7 @@ export default function App() {
                     break;
                   case 'bd':
                     frequencyPerDay = 2;
-                    structuredList.push({ frequency: 3, unit: 'day' });
+                    structuredList.push({ frequency: 2, unit: 'day' });
                     part = '2 times a day';
                     break;
                   case 'prn':

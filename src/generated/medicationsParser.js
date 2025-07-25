@@ -99,7 +99,7 @@ export default class medicationsParser extends antlr4.Parser {
                              "FREQUENCY_PER_YEAR", "FREQUENCY_PER_HOUR", 
                              "FREQUENCY_PER_MINUTE", "QXD", "QXW", "QXM", 
                              "QXMIN", "FRACTIONAL_DAY_DURATION", "FRACTIONAL_WEEK_DURATION", 
-                             "FRACTIONAL_YEAR_DURATION", "WORD", "X_DURATION", 
+                             "FRACTIONAL_MONTH_DURATION", "WORD", "X_DURATION", 
                              "FOR_DURATION", "SIMPLE_DURATION", "UNTIL_FINISHED", 
                              "CONTINUOUSLY", "LIFELONG", "THEN", "WHEN", 
                              "HASH", "NUMBER", "WS" ];
@@ -981,7 +981,7 @@ medicationsParser.QXM = 155;
 medicationsParser.QXMIN = 156;
 medicationsParser.FRACTIONAL_DAY_DURATION = 157;
 medicationsParser.FRACTIONAL_WEEK_DURATION = 158;
-medicationsParser.FRACTIONAL_YEAR_DURATION = 159;
+medicationsParser.FRACTIONAL_MONTH_DURATION = 159;
 medicationsParser.WORD = 160;
 medicationsParser.X_DURATION = 161;
 medicationsParser.FOR_DURATION = 162;
@@ -1612,8 +1612,8 @@ class DurationContext extends antlr4.ParserRuleContext {
 	    return this.getToken(medicationsParser.FRACTIONAL_WEEK_DURATION, 0);
 	};
 
-	FRACTIONAL_YEAR_DURATION() {
-	    return this.getToken(medicationsParser.FRACTIONAL_YEAR_DURATION, 0);
+	FRACTIONAL_MONTH_DURATION() {
+	    return this.getToken(medicationsParser.FRACTIONAL_MONTH_DURATION, 0);
 	};
 
 	enterRule(listener) {
