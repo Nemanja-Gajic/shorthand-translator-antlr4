@@ -2,35 +2,35 @@
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import medicationsListener from './medicationsListener.js';
-const serializedATN = [4,1,164,94,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,
+const serializedATN = [4,1,171,94,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,
 4,2,5,7,5,2,6,7,6,2,7,7,7,2,8,7,8,2,9,7,9,1,0,1,0,1,0,5,0,24,8,0,10,0,12,
 0,27,9,0,1,0,1,0,3,0,31,8,0,1,0,1,0,3,0,35,8,0,1,0,1,0,1,0,1,0,1,0,1,0,1,
 0,1,0,1,0,1,0,1,0,3,0,48,8,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,57,8,1,1,1,
 1,1,1,1,1,1,1,1,1,1,1,1,5,1,66,8,1,10,1,12,1,69,9,1,1,2,1,2,1,2,1,3,1,3,
 1,4,1,4,1,5,1,5,1,6,1,6,1,7,1,7,1,8,4,8,85,8,8,11,8,12,8,86,1,9,4,9,90,8,
 9,11,9,12,9,91,1,9,0,0,10,0,2,4,6,8,10,12,14,16,18,0,8,2,0,1,2,5,29,1,0,
-126,152,1,0,117,125,1,0,154,159,1,0,35,68,2,0,69,89,91,116,1,1,162,162,0,
-1,104,0,47,1,0,0,0,2,56,1,0,0,0,4,70,1,0,0,0,6,73,1,0,0,0,8,75,1,0,0,0,10,
-77,1,0,0,0,12,79,1,0,0,0,14,81,1,0,0,0,16,84,1,0,0,0,18,89,1,0,0,0,20,25,
-3,2,1,0,21,22,5,160,0,0,22,24,3,2,1,0,23,21,1,0,0,0,24,27,1,0,0,0,25,23,
-1,0,0,0,25,26,1,0,0,0,26,30,1,0,0,0,27,25,1,0,0,0,28,29,5,161,0,0,29,31,
-3,16,8,0,30,28,1,0,0,0,30,31,1,0,0,0,31,34,1,0,0,0,32,33,5,162,0,0,33,35,
-3,18,9,0,34,32,1,0,0,0,34,35,1,0,0,0,35,36,1,0,0,0,36,37,5,0,0,1,37,48,1,
-0,0,0,38,39,3,12,6,0,39,40,5,0,0,1,40,48,1,0,0,0,41,42,3,14,7,0,42,43,5,
-0,0,1,43,48,1,0,0,0,44,45,3,8,4,0,45,46,5,0,0,1,46,48,1,0,0,0,47,20,1,0,
-0,0,47,38,1,0,0,0,47,41,1,0,0,0,47,44,1,0,0,0,48,1,1,0,0,0,49,57,3,4,2,0,
-50,57,3,6,3,0,51,57,3,8,4,0,52,57,3,10,5,0,53,57,3,12,6,0,54,57,3,14,7,0,
-55,57,5,153,0,0,56,49,1,0,0,0,56,50,1,0,0,0,56,51,1,0,0,0,56,52,1,0,0,0,
-56,53,1,0,0,0,56,54,1,0,0,0,56,55,1,0,0,0,57,67,1,0,0,0,58,66,3,4,2,0,59,
-66,3,6,3,0,60,66,3,8,4,0,61,66,3,10,5,0,62,66,3,12,6,0,63,66,3,14,7,0,64,
-66,5,153,0,0,65,58,1,0,0,0,65,59,1,0,0,0,65,60,1,0,0,0,65,61,1,0,0,0,65,
-62,1,0,0,0,65,63,1,0,0,0,65,64,1,0,0,0,66,69,1,0,0,0,67,65,1,0,0,0,67,68,
-1,0,0,0,68,3,1,0,0,0,69,67,1,0,0,0,70,71,5,163,0,0,71,72,7,0,0,0,72,5,1,
-0,0,0,73,74,7,1,0,0,74,7,1,0,0,0,75,76,7,2,0,0,76,9,1,0,0,0,77,78,7,3,0,
-0,78,11,1,0,0,0,79,80,7,4,0,0,80,13,1,0,0,0,81,82,7,5,0,0,82,15,1,0,0,0,
-83,85,8,6,0,0,84,83,1,0,0,0,85,86,1,0,0,0,86,84,1,0,0,0,86,87,1,0,0,0,87,
-17,1,0,0,0,88,90,8,7,0,0,89,88,1,0,0,0,90,91,1,0,0,0,91,89,1,0,0,0,91,92,
-1,0,0,0,92,19,1,0,0,0,9,25,30,34,47,56,65,67,86,91];
+126,156,1,0,117,125,2,0,157,159,161,166,1,0,35,68,2,0,69,89,91,116,1,1,169,
+169,0,1,104,0,47,1,0,0,0,2,56,1,0,0,0,4,70,1,0,0,0,6,73,1,0,0,0,8,75,1,0,
+0,0,10,77,1,0,0,0,12,79,1,0,0,0,14,81,1,0,0,0,16,84,1,0,0,0,18,89,1,0,0,
+0,20,25,3,2,1,0,21,22,5,167,0,0,22,24,3,2,1,0,23,21,1,0,0,0,24,27,1,0,0,
+0,25,23,1,0,0,0,25,26,1,0,0,0,26,30,1,0,0,0,27,25,1,0,0,0,28,29,5,168,0,
+0,29,31,3,16,8,0,30,28,1,0,0,0,30,31,1,0,0,0,31,34,1,0,0,0,32,33,5,169,0,
+0,33,35,3,18,9,0,34,32,1,0,0,0,34,35,1,0,0,0,35,36,1,0,0,0,36,37,5,0,0,1,
+37,48,1,0,0,0,38,39,3,12,6,0,39,40,5,0,0,1,40,48,1,0,0,0,41,42,3,14,7,0,
+42,43,5,0,0,1,43,48,1,0,0,0,44,45,3,8,4,0,45,46,5,0,0,1,46,48,1,0,0,0,47,
+20,1,0,0,0,47,38,1,0,0,0,47,41,1,0,0,0,47,44,1,0,0,0,48,1,1,0,0,0,49,57,
+3,4,2,0,50,57,3,6,3,0,51,57,3,8,4,0,52,57,3,10,5,0,53,57,3,12,6,0,54,57,
+3,14,7,0,55,57,5,160,0,0,56,49,1,0,0,0,56,50,1,0,0,0,56,51,1,0,0,0,56,52,
+1,0,0,0,56,53,1,0,0,0,56,54,1,0,0,0,56,55,1,0,0,0,57,67,1,0,0,0,58,66,3,
+4,2,0,59,66,3,6,3,0,60,66,3,8,4,0,61,66,3,10,5,0,62,66,3,12,6,0,63,66,3,
+14,7,0,64,66,5,160,0,0,65,58,1,0,0,0,65,59,1,0,0,0,65,60,1,0,0,0,65,61,1,
+0,0,0,65,62,1,0,0,0,65,63,1,0,0,0,65,64,1,0,0,0,66,69,1,0,0,0,67,65,1,0,
+0,0,67,68,1,0,0,0,68,3,1,0,0,0,69,67,1,0,0,0,70,71,5,170,0,0,71,72,7,0,0,
+0,72,5,1,0,0,0,73,74,7,1,0,0,74,7,1,0,0,0,75,76,7,2,0,0,76,9,1,0,0,0,77,
+78,7,3,0,0,78,11,1,0,0,0,79,80,7,4,0,0,80,13,1,0,0,0,81,82,7,5,0,0,82,15,
+1,0,0,0,83,85,8,6,0,0,84,83,1,0,0,0,85,86,1,0,0,0,86,84,1,0,0,0,86,87,1,
+0,0,0,87,17,1,0,0,0,88,90,8,7,0,0,89,88,1,0,0,0,90,91,1,0,0,0,91,89,1,0,
+0,0,91,92,1,0,0,0,92,19,1,0,0,0,9,25,30,34,47,56,65,67,86,91];
 
 
 const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -64,7 +64,8 @@ export default class medicationsParser extends antlr4.Parser {
                             null, null, null, null, null, null, null, null, 
                             null, null, null, null, null, "'once'", "'twice'", 
                             null, null, null, null, null, null, null, null, 
-                            null, null, null, null, null, null, null, "'then'", 
+                            null, null, null, null, null, null, null, null, 
+                            null, null, null, null, null, null, "'then'", 
                             "'when'", "'#'" ];
     static symbolicNames = [ null, "TSP", "TBSP", "G", "L", "KG", "MG", 
                              "MCG", "ML", "U_PER_ML", "MG_PER_G", "MG_PER_ML", 
@@ -96,7 +97,9 @@ export default class medicationsParser extends antlr4.Parser {
                              "ONCE", "TWICE", "THRICE", "QXH", "FREQUENCY_PER_DAY", 
                              "FREQUENCY_PER_WEEK", "FREQUENCY_PER_MONTH", 
                              "FREQUENCY_PER_YEAR", "FREQUENCY_PER_HOUR", 
-                             "FREQUENCY_PER_MINUTE", "WORD", "X_DURATION", 
+                             "FREQUENCY_PER_MINUTE", "QXD", "QXW", "QXM", 
+                             "QXMIN", "FRACTIONAL_DAY_DURATION", "FRACTIONAL_WEEK_DURATION", 
+                             "FRACTIONAL_YEAR_DURATION", "WORD", "X_DURATION", 
                              "FOR_DURATION", "SIMPLE_DURATION", "UNTIL_FINISHED", 
                              "CONTINUOUSLY", "LIFELONG", "THEN", "WHEN", 
                              "HASH", "NUMBER", "WS" ];
@@ -130,7 +133,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 25;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	            while(_la===160) {
+	            while(_la===167) {
 	                this.state = 21;
 	                this.match(medicationsParser.THEN);
 	                this.state = 22;
@@ -142,7 +145,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 30;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	            if(_la===161) {
+	            if(_la===168) {
 	                this.state = 28;
 	                this.match(medicationsParser.WHEN);
 	                this.state = 29;
@@ -152,7 +155,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 34;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	            if(_la===162) {
+	            if(_la===169) {
 	                this.state = 32;
 	                this.match(medicationsParser.HASH);
 	                this.state = 33;
@@ -213,7 +216,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.state = 56;
 	        this._errHandler.sync(this);
 	        switch(this._input.LA(1)) {
-	        case 163:
+	        case 170:
 	            this.state = 49;
 	            this.dosage();
 	            break;
@@ -244,6 +247,10 @@ export default class medicationsParser extends antlr4.Parser {
 	        case 150:
 	        case 151:
 	        case 152:
+	        case 153:
+	        case 154:
+	        case 155:
+	        case 156:
 	            this.state = 50;
 	            this.frequency();
 	            break;
@@ -259,12 +266,15 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 51;
 	            this.timing();
 	            break;
-	        case 154:
-	        case 155:
-	        case 156:
 	        case 157:
 	        case 158:
 	        case 159:
+	        case 161:
+	        case 162:
+	        case 163:
+	        case 164:
+	        case 165:
+	        case 166:
 	            this.state = 52;
 	            this.duration();
 	            break;
@@ -355,7 +365,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 54;
 	            this.site();
 	            break;
-	        case 153:
+	        case 160:
 	            this.state = 55;
 	            this.match(medicationsParser.WORD);
 	            break;
@@ -365,11 +375,11 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.state = 67;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        while(((((_la - 35)) & ~0x1f) === 0 && ((1 << (_la - 35)) & 4294967295) !== 0) || ((((_la - 67)) & ~0x1f) === 0 && ((1 << (_la - 67)) & 4286578687) !== 0) || ((((_la - 99)) & ~0x1f) === 0 && ((1 << (_la - 99)) & 4294967295) !== 0) || ((((_la - 131)) & ~0x1f) === 0 && ((1 << (_la - 131)) & 536870911) !== 0) || _la===163) {
+	        while(((((_la - 35)) & ~0x1f) === 0 && ((1 << (_la - 35)) & 4294967295) !== 0) || ((((_la - 67)) & ~0x1f) === 0 && ((1 << (_la - 67)) & 4286578687) !== 0) || ((((_la - 99)) & ~0x1f) === 0 && ((1 << (_la - 99)) & 4294967295) !== 0) || ((((_la - 131)) & ~0x1f) === 0 && ((1 << (_la - 131)) & 4294967295) !== 0) || ((((_la - 163)) & ~0x1f) === 0 && ((1 << (_la - 163)) & 143) !== 0)) {
 	            this.state = 65;
 	            this._errHandler.sync(this);
 	            switch(this._input.LA(1)) {
-	            case 163:
+	            case 170:
 	                this.state = 58;
 	                this.dosage();
 	                break;
@@ -400,6 +410,10 @@ export default class medicationsParser extends antlr4.Parser {
 	            case 150:
 	            case 151:
 	            case 152:
+	            case 153:
+	            case 154:
+	            case 155:
+	            case 156:
 	                this.state = 59;
 	                this.frequency();
 	                break;
@@ -415,12 +429,15 @@ export default class medicationsParser extends antlr4.Parser {
 	                this.state = 60;
 	                this.timing();
 	                break;
-	            case 154:
-	            case 155:
-	            case 156:
 	            case 157:
 	            case 158:
 	            case 159:
+	            case 161:
+	            case 162:
+	            case 163:
+	            case 164:
+	            case 165:
+	            case 166:
 	                this.state = 61;
 	                this.duration();
 	                break;
@@ -511,7 +528,7 @@ export default class medicationsParser extends antlr4.Parser {
 	                this.state = 63;
 	                this.site();
 	                break;
-	            case 153:
+	            case 160:
 	                this.state = 64;
 	                this.match(medicationsParser.WORD);
 	                break;
@@ -579,7 +596,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 73;
 	        _la = this._input.LA(1);
-	        if(!(((((_la - 126)) & ~0x1f) === 0 && ((1 << (_la - 126)) & 134217727) !== 0))) {
+	        if(!(((((_la - 126)) & ~0x1f) === 0 && ((1 << (_la - 126)) & 2147483647) !== 0))) {
 	        this._errHandler.recoverInline(this);
 	        }
 	        else {
@@ -641,7 +658,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 77;
 	        _la = this._input.LA(1);
-	        if(!(((((_la - 154)) & ~0x1f) === 0 && ((1 << (_la - 154)) & 63) !== 0))) {
+	        if(!(((((_la - 157)) & ~0x1f) === 0 && ((1 << (_la - 157)) & 1015) !== 0))) {
 	        this._errHandler.recoverInline(this);
 	        }
 	        else {
@@ -738,7 +755,7 @@ export default class medicationsParser extends antlr4.Parser {
 	        do {
 	            this.state = 83;
 	            _la = this._input.LA(1);
-	            if(_la<=0 || _la===-1 || _la===162) {
+	            if(_la<=0 || _la===-1 || _la===169) {
 	            this._errHandler.recoverInline(this);
 	            }
 	            else {
@@ -748,7 +765,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 86; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	        } while((((_la) & ~0x1f) === 0 && ((1 << _la) & 4294967294) !== 0) || ((((_la - 32)) & ~0x1f) === 0 && ((1 << (_la - 32)) & 4294967295) !== 0) || ((((_la - 64)) & ~0x1f) === 0 && ((1 << (_la - 64)) & 4294967295) !== 0) || ((((_la - 96)) & ~0x1f) === 0 && ((1 << (_la - 96)) & 4294967295) !== 0) || ((((_la - 128)) & ~0x1f) === 0 && ((1 << (_la - 128)) & 4294967295) !== 0) || ((((_la - 160)) & ~0x1f) === 0 && ((1 << (_la - 160)) & 27) !== 0));
+	        } while((((_la) & ~0x1f) === 0 && ((1 << _la) & 4294967294) !== 0) || ((((_la - 32)) & ~0x1f) === 0 && ((1 << (_la - 32)) & 4294967295) !== 0) || ((((_la - 64)) & ~0x1f) === 0 && ((1 << (_la - 64)) & 4294967295) !== 0) || ((((_la - 96)) & ~0x1f) === 0 && ((1 << (_la - 96)) & 4294967295) !== 0) || ((((_la - 128)) & ~0x1f) === 0 && ((1 << (_la - 128)) & 4294967295) !== 0) || ((((_la - 160)) & ~0x1f) === 0 && ((1 << (_la - 160)) & 3583) !== 0));
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -787,7 +804,7 @@ export default class medicationsParser extends antlr4.Parser {
 	            this.state = 91; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	        } while((((_la) & ~0x1f) === 0 && ((1 << _la) & 4294967294) !== 0) || ((((_la - 32)) & ~0x1f) === 0 && ((1 << (_la - 32)) & 4294967295) !== 0) || ((((_la - 64)) & ~0x1f) === 0 && ((1 << (_la - 64)) & 4294967295) !== 0) || ((((_la - 96)) & ~0x1f) === 0 && ((1 << (_la - 96)) & 4294967295) !== 0) || ((((_la - 128)) & ~0x1f) === 0 && ((1 << (_la - 128)) & 4294967295) !== 0) || ((((_la - 160)) & ~0x1f) === 0 && ((1 << (_la - 160)) & 31) !== 0));
+	        } while((((_la) & ~0x1f) === 0 && ((1 << _la) & 4294967294) !== 0) || ((((_la - 32)) & ~0x1f) === 0 && ((1 << (_la - 32)) & 4294967295) !== 0) || ((((_la - 64)) & ~0x1f) === 0 && ((1 << (_la - 64)) & 4294967295) !== 0) || ((((_la - 96)) & ~0x1f) === 0 && ((1 << (_la - 96)) & 4294967295) !== 0) || ((((_la - 128)) & ~0x1f) === 0 && ((1 << (_la - 128)) & 4294967295) !== 0) || ((((_la - 160)) & ~0x1f) === 0 && ((1 << (_la - 160)) & 4095) !== 0));
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -958,18 +975,25 @@ medicationsParser.FREQUENCY_PER_MONTH = 149;
 medicationsParser.FREQUENCY_PER_YEAR = 150;
 medicationsParser.FREQUENCY_PER_HOUR = 151;
 medicationsParser.FREQUENCY_PER_MINUTE = 152;
-medicationsParser.WORD = 153;
-medicationsParser.X_DURATION = 154;
-medicationsParser.FOR_DURATION = 155;
-medicationsParser.SIMPLE_DURATION = 156;
-medicationsParser.UNTIL_FINISHED = 157;
-medicationsParser.CONTINUOUSLY = 158;
-medicationsParser.LIFELONG = 159;
-medicationsParser.THEN = 160;
-medicationsParser.WHEN = 161;
-medicationsParser.HASH = 162;
-medicationsParser.NUMBER = 163;
-medicationsParser.WS = 164;
+medicationsParser.QXD = 153;
+medicationsParser.QXW = 154;
+medicationsParser.QXM = 155;
+medicationsParser.QXMIN = 156;
+medicationsParser.FRACTIONAL_DAY_DURATION = 157;
+medicationsParser.FRACTIONAL_WEEK_DURATION = 158;
+medicationsParser.FRACTIONAL_YEAR_DURATION = 159;
+medicationsParser.WORD = 160;
+medicationsParser.X_DURATION = 161;
+medicationsParser.FOR_DURATION = 162;
+medicationsParser.SIMPLE_DURATION = 163;
+medicationsParser.UNTIL_FINISHED = 164;
+medicationsParser.CONTINUOUSLY = 165;
+medicationsParser.LIFELONG = 166;
+medicationsParser.THEN = 167;
+medicationsParser.WHEN = 168;
+medicationsParser.HASH = 169;
+medicationsParser.NUMBER = 170;
+medicationsParser.WS = 171;
 
 medicationsParser.RULE_prescription = 0;
 medicationsParser.RULE_instruction = 1;
@@ -1442,6 +1466,22 @@ class FrequencyContext extends antlr4.ParserRuleContext {
 	    return this.getToken(medicationsParser.FREQUENCY_PER_MINUTE, 0);
 	};
 
+	QXD() {
+	    return this.getToken(medicationsParser.QXD, 0);
+	};
+
+	QXW() {
+	    return this.getToken(medicationsParser.QXW, 0);
+	};
+
+	QXM() {
+	    return this.getToken(medicationsParser.QXM, 0);
+	};
+
+	QXMIN() {
+	    return this.getToken(medicationsParser.QXMIN, 0);
+	};
+
 	enterRule(listener) {
 	    if(listener instanceof medicationsListener ) {
 	        listener.enterFrequency(this);
@@ -1562,6 +1602,18 @@ class DurationContext extends antlr4.ParserRuleContext {
 
 	LIFELONG() {
 	    return this.getToken(medicationsParser.LIFELONG, 0);
+	};
+
+	FRACTIONAL_DAY_DURATION() {
+	    return this.getToken(medicationsParser.FRACTIONAL_DAY_DURATION, 0);
+	};
+
+	FRACTIONAL_WEEK_DURATION() {
+	    return this.getToken(medicationsParser.FRACTIONAL_WEEK_DURATION, 0);
+	};
+
+	FRACTIONAL_YEAR_DURATION() {
+	    return this.getToken(medicationsParser.FRACTIONAL_YEAR_DURATION, 0);
 	};
 
 	enterRule(listener) {

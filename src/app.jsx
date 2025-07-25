@@ -7,11 +7,11 @@ function translateTiming(token) {
   const text = token.getText().toLowerCase();
   console.log('translateTiming input:', text);
   switch (text) {
-    case 'ac': return 'Take before eating';
-    case 'pc': return 'Take after eating';
-    case 'wc': return 'Take with meals';
-    case 'hs': return 'Take before going to sleep';
-    case 'qam': return 'Every morning';
+    case 'ac': return 'take before eating';
+    case 'pc': return 'take after eating';
+    case 'wc': return 'take with meals';
+    case 'hs': return 'take before going to sleep';
+    case 'qam': return 'every morning';
     default: return text;
   }
 }
@@ -23,6 +23,9 @@ function translateDuration(token) {
   const matchWeeks = text.match(/(?:x\s*|for\s*)?(\d+)\s*(w|week|weeks)/i);
   const matchMonths = text.match(/(?:x\s*|for\s*)?(\d+)\s*(mo|m|month|months)/i);
   const matchYears = text.match(/(?:x\s*|for\s*)?(\d+)\s*(y|year|years)/i);
+  const matchFractionalDays = text.match(/(\d+)\/7/i);
+  const matchFractionalWeeks = text.match(/(\d+)\/52/i);
+  const matchFractionalYears = text.match(/(\d+)\/12/i);
   if (matchDays) {
     const days = parseInt(matchDays[1], 10);
     return `for ${days} day${days > 1 ? 's' : ''}`;
@@ -34,6 +37,15 @@ function translateDuration(token) {
     return `for ${months} month${months > 1 ? 's' : ''}`;
   } else if (matchYears) {
     const years = parseInt(matchYears[1], 10);
+    return `for ${years} year${years > 1 ? 's' : ''}`;
+  } else if (matchFractionalDays) {
+    const days = parseInt(matchFractionalDays[1], 10);
+    return `for ${days} day${days > 1 ? 's' : ''}`;
+  } else if (matchFractionalWeeks) {
+    const weeks = parseInt(matchFractionalWeeks[1], 10);
+    return `for ${weeks} week${weeks > 1 ? 's' : ''}`;
+  } else if (matchFractionalYears) {
+    const years = parseInt(matchFractionalYears[1], 10);
     return `for ${years} year${years > 1 ? 's' : ''}`;
   } else if (text === 'until finished' || text === 'until complete' || text === 'complete course') {
     return 'Take full prescribed course';
@@ -130,7 +142,6 @@ export default function App() {
         const lexer = new MedicationsLexer(chars);
         const tokens = new antlr4.CommonTokenStream(lexer);
         
-        // Log all tokens to debug tokenization
         tokens.fill();
         console.log('Tokens:', tokens.tokens.map(t => ({
           text: t.text,
@@ -141,8 +152,8 @@ export default function App() {
         const parser = new MedicationsParser(tokens);
         parser.buildParseTrees = true;
         const tree = parser.prescription();
-        const parts1 = []; // For instructions before "then"
-        const parts2 = []; // For instructions after "then"
+        const parts1 = [];
+        const parts2 = [];
         const structuredList = [];
         let dosageAmount = null;
         let frequencyPerDay = null;
@@ -178,7 +189,7 @@ export default function App() {
                 'mg/g': 'milligram per gram',
                 'mg per ml': 'milligrams per milliliter',
                 'mcg/ml': 'microgram per milliliter',
-                'mcg per ml': 'mcg/ml',
+                'mcg per ml': 'microgram per milliliter',
                 'meq': 'mEq',
                 'milliequivalents': 'mEq',
                 'gtt': num > 1 ? 'drops' : 'drop',
@@ -240,6 +251,9 @@ export default function App() {
               const matchWeeks = text.match(/(?:x\s*|for\s*)?(\d+)\s*(w|week|weeks)/i);
               const matchMonths = text.match(/(?:x\s*|for\s*)?(\d+)\s*(mo|m|month|months)/i);
               const matchYears = text.match(/(?:x\s*|for\s*)?(\d+)\s*(y|year|years)/i);
+              const matchFractionalDays = text.match(/(\d+)\/7/i);
+              const matchFractionalWeeks = text.match(/(\d+)\/52/i);
+              const matchFractionalYears = text.match(/(\d+)\/12/i);
               if (matchDays) {
                 const days = parseInt(matchDays[1], 10);
                 durationDays = days;
@@ -268,6 +282,27 @@ export default function App() {
                 const part = translateDuration({ getText: () => text });
                 if (afterThen) parts2.push(part);
                 else parts1.push(part);
+              } else if (matchFractionalDays) {
+                const days = parseInt(matchFractionalDays[1], 10);
+                durationDays = days;
+                structuredList.push({ duration: days, unit: days > 1 ? 'days' : 'day' });
+                const part = translateDuration({ getText: () => text });
+                if (afterThen) parts2.push(part);
+                else parts1.push(part);
+              } else if (matchFractionalWeeks) {
+                const weeks = parseInt(matchFractionalWeeks[1], 10);
+                durationDays = weeks * 7;
+                structuredList.push({ duration: weeks, unit: weeks > 1 ? 'weeks' : 'week' });
+                const part = translateDuration({ getText: () => text });
+                if (afterThen) parts2.push(part);
+                else parts1.push(part);
+              } else if (matchFractionalYears) {
+                const years = parseInt(matchFractionalYears[1], 10);
+                durationDays = years * 365;
+                structuredList.push({ duration: years, unit: years > 1 ? 'years' : 'year' });
+                const part = translateDuration({ getText: () => text });
+                if (afterThen) parts2.push(part);
+                else parts1.push(part);
               } else {
                 const part = translateDuration({ getText: () => text });
                 if (afterThen) parts2.push(part);
@@ -282,12 +317,16 @@ export default function App() {
               const matchPerMonth = txt.match(/(\d+)(?:x\/month|x\/m|\sx\/m|\sx\/month)/);
               const matchPerYear = txt.match(/(\d+)(?:x\/year|x\/y|\sx\/y|\sx\/year)/);
               const matchPerHour = txt.match(/(\d+)(?:x\/hour|x\/h|\sx\/h|\sx\/hour)/);
+              const matchQXD = txt.match(/q(\d+)d/);
+              const matchQXW = txt.match(/q(\d+)w/);
+              const matchQXM = txt.match(/q(\d+)m/);
+              const matchQXMIN = txt.match(/q(\d+)min/);
               let part;
               if (match) {
                 const hours = parseInt(match[1], 10);
                 frequencyPerDay = 24 / hours;
                 structuredList.push({ frequency: 1, unit: 'hour' });
-                part = `Every ${hours} hours`;
+                part = `every ${hours} hour${hours > 1 ? 's' : ''}`;
               } else if (matchPerDay) {
                 const times = parseInt(matchPerDay[1], 10);
                 frequencyPerDay = times;
@@ -313,6 +352,26 @@ export default function App() {
                 frequencyPerDay = times * 24;
                 structuredList.push({ frequency: times, unit: 'hour' });
                 part = `${times} time${times > 1 ? 's' : ''} an hour`;
+              } else if (matchQXD) {
+                const days = parseInt(matchQXD[1], 10);
+                frequencyPerDay = 1 / days;
+                structuredList.push({ frequency: 1, unit: 'day' });
+                part = `every ${days} day${days > 1 ? 's' : ''}`;
+              } else if (matchQXW) {
+                const weeks = parseInt(matchQXW[1], 10);
+                frequencyPerDay = 1 / (weeks * 7);
+                structuredList.push({ frequency: 1, unit: 'week' });
+                part = `every ${weeks} week${weeks > 1 ? 's' : ''}`;
+              } else if (matchQXM) {
+                const months = parseInt(matchQXM[1], 10);
+                frequencyPerDay = 1 / (months * 30);
+                structuredList.push({ frequency: 1, unit: 'month' });
+                part = `every ${months} month${months > 1 ? 's' : ''}`;
+              } else if (matchQXMIN) {
+                const minutes = parseInt(matchQXMIN[1], 10);
+                frequencyPerDay = (24 * 60) / minutes;
+                structuredList.push({ frequency: 1, unit: 'minute' });
+                part = `every ${minutes} minute${minutes > 1 ? 's' : ''}`;
               } else {
                 switch (txt) {
                   case 'qam':
@@ -340,6 +399,11 @@ export default function App() {
                     frequencyPerDay = 3;
                     structuredList.push({ frequency: 3, unit: 'day' });
                     part = '3 times a day';
+                    break;
+                  case 'bd':
+                    frequencyPerDay = 2;
+                    structuredList.push({ frequency: 3, unit: 'day' });
+                    part = '2 times a day';
                     break;
                   case 'prn':
                     part = 'as needed';
@@ -512,7 +576,7 @@ export default function App() {
           value={dispenseQuantity}
           readOnly
           className="w-full p-2 border border-blue-300 rounded-md bg-blue-50 resize-none"
-          rows="2"
+          rows="1"
           placeholder="Dispense quantity will appear here"
         />
       </div>
